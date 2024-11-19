@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# React Form with Dark Mode and File Upload
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that includes a form with the following features:
+- Light and Dark mode toggle
+- Name and Age input fields
+- File upload with a preview
+- Form submission with an alert on success
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Light/Dark Mode Toggle**: Switch between light and dark themes using a toggle switch.
+- **Form Fields**: Input fields for name and age.
+- **File Upload**: Upload an image file and preview it within a dashed container.
+- **Form Submission**: Submit the form and display an alert on successful submission.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/react-form-dark-mode.git
+   cd react-form-dark-mode
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install dependencies::
+   ```bash
+   npm install
 
-### `npm test`
+3. Start the development server:
+   ```bash
+   npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+### Dark Mode Toggle
+- Use the toggle switch to switch between Light and Dark modes.
+- The form and UI will automatically adjust to the selected theme.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Form Fields
+- Enter your name and age in the respective fields.
+- Ensure that all fields are filled before submitting.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### File Upload
+- Drag and drop an image file into the dashed container, or click to browse and upload.
+- The image preview will be displayed within the container.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Submit the Form
+- Once all fields are filled and a file is uploaded, click on the Submit button.
+- A success alert will appear indicating that the form has been submitted.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## FastAPI Backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project includes a FastAPI backend to handle form submissions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Form Submission Endpoint**: Accepts form data including name, age, and file upload.
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Create a virtual environment:
+   ```bash
+   python -m venv venv
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Activate the virtual environment
 
-### Code Splitting
+- On Windows:
+  ```bash
+  .\venv\Scripts\activate
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Install the dependencies:
+  ```bash
+    pip install fastapi uvicorn
+  ```
+  
+## Run the FastApi application
+     ```bash
+    uvicorn main:app --reload
+  
